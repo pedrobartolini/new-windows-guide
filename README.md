@@ -12,7 +12,7 @@ Clique em **Display settings**<br>
 Desça até **Graphical settings**<br>
 Ative a opção **Hardware-accelerated GPU Scheduling**<br>
 Em **Choose an app to set preference**, escolha *Desktop App*
-[windows hardware accel](https://raw.githubusercontent.com/pedrobartolini/new-windows-guide/main/hardware-accel.png "windows hardware accel")
+https://raw.githubusercontent.com/pedrobartolini/new-windows-guide/main/hardware-accel.png
 
 
 ## Desativar economia de energia
