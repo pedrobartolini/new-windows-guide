@@ -11,12 +11,13 @@ Clique com o **botão direito do mouse no desktop**<br>
 Clique em **Display settings**<br>
 Desça até **Graphical settings**<br>
 Ative a opção **Hardware-accelerated GPU Scheduling**<br>
-Em **Choose an app to set preference**, escolha *Desktop App*
-https://raw.githubusercontent.com/pedrobartolini/new-windows-guide/main/hardware-accel.png
-
+Em **Choose an app to set preference**, escolha *Desktop App*<br><br>
+<img src="https://raw.githubusercontent.com/pedrobartolini/new-windows-guide/main/hardware-accel.png" width="800">
 
 ## Desativar economia de energia
 Pesquise por **Power settings**
+Arraste **Performance and Energy** até *Best performance*<br><br>
+<img src="https://raw.githubusercontent.com/pedrobartolini/new-windows-guide/main/power-settings.png" width="800">
 
 
 ## Drivers de video
