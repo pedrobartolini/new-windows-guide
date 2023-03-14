@@ -6,6 +6,19 @@ Abra o powershell e execute o código abaixo e siga as instruções.
 irm https://massgrave.dev/get | iex
 ```
 
+## Ative a aceleração de hardware nativa do windows
+Clique com o **botão direito do mouse no desktop**<br>
+Clique em **Display settings**<br>
+Desça até **Graphical settings**<br>
+Ative a opção **Hardware-accelerated GPU Scheduling**<br>
+Em **Choose an app to set preference**, escolha *Desktop App*
+[windows hardware accel](https://raw.githubusercontent.com/pedrobartolini/new-windows-guide/main/hardware-accel.png "windows hardware accel")
+
+
+## Desativar economia de energia
+Pesquise por **Power settings**
+
+
 ## Drivers de video
 Escolha os drivers correspondentes à sua GPU<br>
 [**NVIDIA**](https://www.nvidia.com/download/index.aspx)<br>
