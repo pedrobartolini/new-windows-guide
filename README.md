@@ -7,11 +7,11 @@ irm https://massgrave.dev/get | iex
 ```
 
 ## Ative a aceleração de hardware nativa do windows
-Clique com o **botão direito do mouse no desktop**<br>
-Clique em **Display settings**<br>
-Desça até **Graphical settings**<br>
-Ative a opção **Hardware-accelerated GPU Scheduling**<br>
-Em **Choose an app to set preference**, escolha *Desktop App*<br><br>
+- Clique com o **botão direito do mouse no desktop**
+- Clique em **Display settings**
+- Desça até **Graphical settings**
+- Ative a opção **Hardware-accelerated GPU Scheduling**
+- Em **Choose an app to set preference**, escolha *Desktop App*
 <img src="https://raw.githubusercontent.com/pedrobartolini/new-windows-guide/main/hardware-accel.png" width="800">
 
 ## Desativar economia de energia
@@ -21,9 +21,10 @@ Arraste **Performance and Energy** até *Best performance*<br><br>
 
 
 ## Drivers de video
-Escolha os drivers correspondentes à sua GPU<br>
-[**NVIDIA**](https://www.nvidia.com/download/index.aspx)<br>
-[**AMD**](https://www.amd.com/en/support)
+Escolha os drivers correspondentes à sua GPU
+
+- [**NVIDIA**](https://www.nvidia.com/download/index.aspx)
+- [**AMD**](https://www.amd.com/en/support)
 
 
 ## Desinstalar Cortana
