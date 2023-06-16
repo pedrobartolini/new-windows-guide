@@ -5,6 +5,12 @@ Abra o powershell e execute o código abaixo e siga as instruções.
 ```powershell
 irm https://massgrave.dev/get | iex
 ```
+## Desativar sugestões de pesquisa
+Abre o regedit e navegue até **HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows**
+Crie uma chave chamada **Explorer**
+Dentro de **HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer**, crie uma DWORD 32 bit chamada **DisableSearchBoxSuggestions**
+Edite o valor da DWORD para **hexadecimal** e sete o valor para **1**
+
 
 ## Ative a aceleração de hardware nativa do windows
 - Clique com o **botão direito do mouse no desktop**
