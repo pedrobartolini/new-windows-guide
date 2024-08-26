@@ -1,48 +1,45 @@
-# Guia para uma instalação limpa do Windows 10
+# Windows cheatsheet
 
-## Ativar o Windows
-Abra o powershell e execute o código abaixo e siga as instruções.
+## Activating
+- Open powershell
+- Execute the code bellow then follow on screen instructions
 ```powershell
 irm https://massgrave.dev/get | iex
 ```
-## Desativar sugestões de pesquisa
-- Abre o regedit e navegue até **HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows**
-- Crie uma chave chamada **Explorer**<br>
-- Acesse **HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer**
-- Crie uma DWORD 32 bit chamada **DisableSearchBoxSuggestions**
-- Edite o valor da DWORD para **hexadecimal** e sete o valor para **1**
 
+## Disabling web search suggestions (the ones from BING that show up when you want to search for an program/file)
+- Navigate to regedit path **HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows**
+- Create key in path **Explorer**
+- It should look like this -> **HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer**
+- Create DWORD 32 bit called **DisableSearchBoxSuggestions**
+- Edit DWORD value to **hexadecimal** and **1**
+- Reboot
 
+## Disable write cache policy (IMPORTANT IF YOU HAVE AN WD NVME)
+- Open device manager
+- Right-click your NVME
+- Properties
+- Policies
+<img src="https://raw.githubusercontent.com/pedrobartolini/new-windows-guide/main/write-cache.png" width="400">
 
-## Ative a aceleração de hardware nativa do windows
-- Clique com o **botão direito do mouse no desktop**
-- Clique em **Display settings**
-- Desça até **Graphical settings**
-- Ative a opção **Hardware-accelerated GPU Scheduling**
-- Em **Choose an app to set preference**, escolha *Desktop App*
+## Activate native hardware accel
+- Right click desktop
+- Display settings
+- Graphical settings
+- Activate **Hardware-accelerated GPU Scheduling**
 <img src="https://raw.githubusercontent.com/pedrobartolini/new-windows-guide/main/hardware-accel.png" width="800">
 
-## Desativar economia de energia
-Pesquise por **Power settings**
-Arraste **Performance and Energy** até *Best performance*<br><br>
+## Disable energy saving
+- Search for **Power settings**
+- Drag **Performance and Energy** to *Best performance*
 <img src="https://raw.githubusercontent.com/pedrobartolini/new-windows-guide/main/power-settings.png" width="800">
 
-
-## Drivers de video
-Escolha os drivers correspondentes à sua GPU
-
-- [**NVIDIA**](https://www.nvidia.com/download/index.aspx)
-- [**AMD**](https://www.amd.com/en/support)
-
-
-## Desinstalar Cortana
-Abra o powershell como administrador e execute o código abaixo.
+## Uninstalling Cortana
+- Open powershell as admin
+- Execute code bellow
 ```powershell
 Get-AppxPackage -allusers Microsoft.549981C3F5F10 | Remove-AppxPackage
 ```
 
-## Instale todos os VCREDIST através deste pacote All-In-One
+## VCREDIST All-in-one package (if needed)
 **VCREDIST AIO** https://github.com/abbodi1406/vcredist/releases
-
-
-
