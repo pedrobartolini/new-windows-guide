@@ -9,9 +9,9 @@ irm https://massgrave.dev/get | iex
 
 ## Disabling web search suggestions (the ones from BING that show up when you want to search for an program/file)
 - Navigate to regedit path **HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows**
-- Create key in path **Explorer**
+- Create key **Explorer**
 - It should look like this -> **HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Explorer**
-- Create DWORD 32 bit called **DisableSearchBoxSuggestions**
+- Create DWORD called **DisableSearchBoxSuggestions**
 - Edit DWORD value to **hexadecimal** and **1**
 - Reboot
 
